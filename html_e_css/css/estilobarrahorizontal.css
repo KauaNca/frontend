@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul {
+    width: 500px;
+    float: left;/*Perceba que se ele não tiver um float também, o float do li não vai entrar na tabela pois foi para outra camada*/
+    background:  black  url(../imagens/fundo-horizontal.png) repeat-x;/*Só repeti no eixo x e ainda adicione uma cor para caso a imagem não carregue*/
+}
+ul li {
+    list-style-type: none;
+    float: left;/*Se ele está em float, a tabela também precisa.*/
+    background: url(../imagens/divisor.png) repeat-y right;/*A imagem vai direto para esquerda devido o float, então coloco um right para que ela fique na borda direita.*/
+    
+}
+ul a {
+    text-decoration: none;
+    color: black;
+    line-height: 2em;/*Ele controla a altura da tabela se não tiver uma altura fixa*/
+    padding: 0 2em;
+}
+#home .home{
+    color: white;
+}

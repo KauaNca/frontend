@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /*
+        Exemplos de resoluções de telas:
+
+        ￼320 pixels – Smartphones no modo retrato.
+
+        480 pixels – Smartphones no modo paisagem.
+
+        600 pixels – Tablets pequenos. Ex: Amazon Kindle (600×800)
+
+        ￼768 pixels – Tablets maiores em modo retrato. Ex: iPad (768×1024)
+
+        1024 pixels – Tablets maiores em modo paisagem, monitores antigos.
+
+        ￼1200 pixels – Monitores wide.
+        */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        @media(min-width:600px){
+            div{
+                background-color: blue;
+            }
+        }
+        @media(min-width:900px){
+            div{
+                background-color: green;
+            }
+        }
+        @media(min-width:1200px){
+            div{
+                background-color: yellow;
+            }
+        }
+        /*pode usar min-width e max-width para criar um espaço seguro de medida*/
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>

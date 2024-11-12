@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div {
+    border: 1px solid black;
+}
+#principal {
+    margin: 0 auto;
+    width: 720px;
+}
+#marca {
+    width: 720px;
+    line-height: 200px;
+}
+#conteudo{
+    width: 520px;
+    float: right;
+}
+#navegacao {
+    width: 180px;
+    float: left;
+    background: blue;
+}
+#conteudo .conteudo1{
+    width: 300px;
+    float: left;
+}
+#conteudo .conteudo2{
+    width: 200px;
+    float: right;
+    background: #ccc;
+}
+#navegacao ul li{
+    list-style: none;
+    text-align: center;
+}
+#navegacao ul li a{
+    text-decoration: none;
+    color: white;
+}
+#rodape{
+    clear: both;
+}

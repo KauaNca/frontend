@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing and Border-Radius</title>
+    <style>
+        img.foto1{
+            border-radius: 50%; /*ajustar o raio de arredondamento*/
+            width: 200px; /*ajustar a largura da imagem*/
+            height: 200px; /*ajustar a altura da imagem*/
+        }
+        img.foto2{
+            width: 200px;
+            height: 200px;
+            border-radius: 0px 50px 50px 30px;
+        }
+        #content-box{
+            /*padding e borda não irão ser calculadas com o conteúdo,logo, os 20px de padding fará com que
+            a largura e altura tenha 240px*/
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            padding: 20px;
+            box-sizing: content-box;
+            margin: 15px;
+        }
+        #border-box{
+            /*padding e borda irão ser calculadas com o conteúdo,logo, terá 160px de largura e altura,
+            e 20px de padding em cada lado, no final o quadrado terá 200px de cada*/
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--BORDER RADIUS-->
+    <img src="Phonk.jpg" alt="foto" class="foto1"><!--foto de mesma largura e altura-->
+    <img src="Crash.jpg" alt="crash" class="foto2">
+
+    <!--BOX-SIZING-->
+    <div id="content-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus modi similique inventore distinctio ab molestiae reiciendis explicabo, fuga quas suscipit voluptate debitis illum provident ut pariatur ipsam, accusantium et perferendis?
+    </div>
+
+    <div id="border-box">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ducimus ab est facilis veritatis, placeat veniam maiores tempore provident id accusantium architecto distinctio iste esse expedita fuga doloribus. Earum, aut.
+    </div>
+    
+</body>
+</html>

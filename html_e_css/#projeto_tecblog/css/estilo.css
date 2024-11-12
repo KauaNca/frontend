@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+/*area1*/
+#area1 {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+}
+#area-logo{
+    font-size: 1.8em;
+    padding: 10px;
+}
+#menu{
+    padding: 10px;
+}
+#menu a {
+    text-decoration: none;
+    padding: 8px 15px;
+    color: white;
+    font-size: 1.2em;
+}
+#menu a:link,a:visited{
+    color: white;
+}
+#menu a:hover{
+    background-color: rgb(1, 60, 60);
+    color: black;
+}
+/*fim da area1*/
+/*AREA 2*/
+#area2{
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+#area-postagens{
+    background-color:white;
+    width: 620px;
+    float: left;
+    padding: 8px;
+    margin-bottom: 10px;
+
+}
+#area-lateral{
+    background-color: blue;
+    width: 280px;
+    float: right;
+}
+.titulo-postagem{
+    color: orange;
+    font-size: 1.5em;
+}
+.data-postagem{
+    display: block;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    font-size: 0.8em;
+}
+#area2 a{
+    color: orange;
+    font-size: 0.8em;
+}
+
+#rodape{
+    background-color: orange;
+    clear: both;
+    text-align: center;
+    padding: 15px;
+}

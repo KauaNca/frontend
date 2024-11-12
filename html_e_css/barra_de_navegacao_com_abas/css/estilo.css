@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    border: 1px solid black;
+    float: left;
+}
+ul li {
+    float: left;
+    background: #d82121 url(../imagens/aba-direita2.png) no-repeat top right;
+
+}
+ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    line-height: 2em;
+    padding: 0 2em;
+    float: left;
+    background: url(../imagens/aba-esquerda2.png) no-repeat top left;
+}

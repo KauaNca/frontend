@@ -1,0 +1,22 @@
+ul{
+    list-style-type: none;/*define o tipo de marcador*/
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+    width: 200px;
+
+}
+ul a{
+    text-decoration: none;
+    width: 200px;/*deixa-se de acordo com o tamanho da imagem*/
+    height: 40px;
+    display: block;
+    border: 1px solid red;
+    background: url(../imagens/menu.png) no-repeat left;
+    line-height: 40px;
+    text-indent: 30px;/*é o mesmo que padding, mas é para texto esse. É util*/
+}
+ul a:hover{
+    background: url(../imagens/menu.png) no-repeat right;/*faz com que quando passe o mouse em cima, a imagem se mova para direita.*/
+    color: white;
+}
